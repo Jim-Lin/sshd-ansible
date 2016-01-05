@@ -1,0 +1,7 @@
+ansible:
+  image: sshd-ansible
+  container_name: ansible-server
+  volumes:
+    - ./ansible:/root
+  ports:
+    - "10022:22"
